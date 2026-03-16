@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Meeting Insights</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎯 AI Meeting Insights</h1>
+            <p>Real-time speech transcription and summarization</p>
+        </header>
+
+        <div class="main-content">
+            <div class="recording-section">
+                <button id="recordBtn" class="record-btn">
+                    <span class="btn-icon">🎤</span>
+                    <span class="btn-text">Start Recording</span>
+                </button>
+                <div id="status" class="status">Ready to record</div>
+            </div>
+
+            <div class="results-section">
+                <div class="result-box">
+                    <h3>📝 Live Transcript</h3>
+                    <div id="transcript" class="transcript-content">
+                        Transcript will appear here...
+                    </div>
+                </div>
+
+                <div class="result-box">
+                    <h3>📋 AI Summary</h3>
+                    <div id="summary" class="summary-content">
+                        Summary will appear here...
+                    </div>
+                </div>
+            </div>
+
+            <div class="example-section">
+                <h3>💡 Example Use Case</h3>
+                <div class="example-box">
+                    <p><strong>Try saying:</strong></p>
+                    <p>"So today we're going to finalize the roadmap for Q4, and also discuss the marketing budget increase for the holiday season."</p>
+                    <p><strong>Expected summary:</strong></p>
+                    <p>"Discussing Q4 roadmap and holiday marketing budget adjustments."</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="tech-stack">
+                <h4>Technologies Used</h4>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <strong>Frontend:</strong> HTML + JS (WebSocket, MediaRecorder API)
+                    </div>
+                    <div class="tech-item">
+                        <strong>Backend:</strong> FastAPI
+                    </div>
+                    <div class="tech-item">
+                        <strong>Transcription:</strong> Whisper (local)
+                    </div>
+                    <div class="tech-item">
+                        <strong>Summarization:</strong> HuggingFace Transformers (BART model)
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
